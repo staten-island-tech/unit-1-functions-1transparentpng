@@ -16,4 +16,19 @@ def BIGSquare(amount, length):
         square(length)
         t.left(5)
         length = length + oglength
-BIGSquare(60, 5)
+
+
+def star(length):
+    for i in range(5):
+        t.forward(length)
+        t.left(144)
+
+# Works pretty much the same as BIGSquare, but draws stars rather than squares
+def BIGStar(amount, length):
+    oglength = length
+    for i in range(amount):
+        t.speed(0)
+        star(length)
+        t.left(5)
+        length = length + oglength
+BIGStar(60,10)
