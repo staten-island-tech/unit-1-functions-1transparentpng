@@ -5,6 +5,16 @@ def square(length):
     for i in range(4):
         t.left(90)
         t.forward(length)
+def rectangle(l, w):
+    for i in range (2):
+        t.forward(l)
+        t.left(90)
+        t.forward(w)
+        t.left(90)
+rectangle(125,100)
+
+
+
 
 # BIGSquare makes a spiral using (amount) of squares, starting from (length) and increasing by the original length given.
 # Example: BIGSquare(60, 5) would make a spiral of 60 squares, starting from a length of 5 and increasing by 5 for every square done.
@@ -31,4 +41,3 @@ def BIGStar(amount, length):
         star(length)
         t.left(5)
         length = length + oglength
-BIGStar(60,10)
