@@ -17,8 +17,17 @@ def rectangle(l, w):
         t.left(90)
         t.forward(w)
         t.left(90)
-rectangle(125,100)
 
+def triangle(length):
+    for i in range(3):
+        t.forward(length)
+        t.left(120)
+triangle(120)
+
+def star(length):
+    for i in range(5):
+        t.forward(length)
+        t.left(144)
 
 
 
@@ -26,7 +35,7 @@ rectangle(125,100)
 # Example: BIGSquare(60, 5) would make a spiral of 60 squares, starting from a length of 5 and increasing by 5 for every square done.
 def BIGSquare(amount, length):
     oglength = length
-    print(f"Making a spiral of {amount} squares, with the starting length being {oglength} ")
+    print(f"Making a spiral of {amount} squares, with the starting length and increment being {oglength} ")
     for i in range(amount):
         t.speed(0)
         square(length)
@@ -34,10 +43,7 @@ def BIGSquare(amount, length):
         length = length + oglength
 
 
-def star(length):
-    for i in range(5):
-        t.forward(length)
-        t.left(144)
+
 
 # Works pretty much the same as BIGSquare, but draws stars rather than squares
 def BIGStar(amount, length):
