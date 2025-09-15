@@ -1,12 +1,18 @@
 import turtle
 from turtle import *
 t = Turtle()
+
+# makes a square with each side's length being (length)
 def square(length):
+    print(f"Creating a square with a side length of {length}")
     for i in range(4):
         t.left(90)
         t.forward(length)
+
+# Makes a rectangle with (l) length and (w) width
 def rectangle(l, w):
-    for i in range (2):
+    print(f"Creating rectangle with {l} length and {w} width")
+    for i in range(2):
         t.forward(l)
         t.left(90)
         t.forward(w)
@@ -20,7 +26,7 @@ rectangle(125,100)
 # Example: BIGSquare(60, 5) would make a spiral of 60 squares, starting from a length of 5 and increasing by 5 for every square done.
 def BIGSquare(amount, length):
     oglength = length
-    print("Making a spiral of squares :D")
+    print(f"Making a spiral of {amount} squares, with the starting length being {oglength} ")
     for i in range(amount):
         t.speed(0)
         square(length)
