@@ -18,12 +18,13 @@ def rectangle(l, w):
         t.forward(w)
         t.left(90)
 
+# Makes a triangle with a sidelength of (length)
 def triangle(length):
     for i in range(3):
         t.forward(length)
         t.left(120)
-triangle(120)
 
+# Makes a star with a sidelength of (length)
 def star(length):
     for i in range(5):
         t.forward(length)
@@ -53,3 +54,4 @@ def BIGStar(amount, length):
         star(length)
         t.left(5)
         length = length + oglength
+
