@@ -54,4 +54,4 @@ def BIGStar(amount, length):
         star(length)
         t.left(5)
         length = length + oglength
-
+BIGStar(60,10)
